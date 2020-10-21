@@ -26,7 +26,7 @@ public class TitleBarReactView extends ReactView {
 
     private int getWidthMeasureSpec(int currentSpec) {
         return (isCenter() && getChildCount() > 0 && getChildAt(0).getWidth() > 0) ?
-                MeasureSpec.makeMeasureSpec(getChildAt(0).getWidth(), MeasureSpec.EXACTLY) :
+                MeasureSpec.makeMeasureSpec(getChildAt(0).getWidth(), MeasureSpec.UNSPECIFIED) :
                 currentSpec;
     }
 
